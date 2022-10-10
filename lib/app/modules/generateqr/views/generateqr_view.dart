@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
+import '../../../services/helpers.dart';
 import '../controllers/generateqr_controller.dart';
 
 class GenerateqrView extends GetView<GenerateqrController> {
@@ -14,7 +15,9 @@ class GenerateqrView extends GetView<GenerateqrController> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 50),
+          height: Get.height,
+          width: double.infinity,
+          padding: const EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 50),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -25,10 +28,14 @@ class GenerateqrView extends GetView<GenerateqrController> {
                       size: 310.0,
                     ),
                   )),
-              Obx(() => Text(
-                    "le Qr code corespond à : ${controller.qrText}",
-                    style: const TextStyle(fontWeight: FontWeight.bold),
-                  )),
+              Obx(() => Row(
+                children: [
+                  Text(
+                        "le Qr code corespond à : ${controller.qrText}",
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      ),
+                ],
+              )),
               const SizedBox(height: 20),
               Form(
                   key: controller.keyForm,
@@ -40,7 +47,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                           controller: controller.inputQr,
                           validator: (value) {
                             if (value!.isEmpty) {
-                              return "Vous n'avez rien enter";
+                              return "Vous n'avez rien entrer";
                             }
                             return null;
                           },
@@ -102,13 +109,20 @@ class GenerateqrView extends GetView<GenerateqrController> {
                             onPressed: () {
                             
                             },
-                          child: const Text('Scanner QR Code', style: TextStyle(color: Colors.green, fontSize: 16),),
+                          child: const Text('Télécharger QR Code', style: TextStyle(color: Colors.green, fontSize: 16),),
                         ),
                       ),
                     ],
                   )),
-              const SizedBox(height: 30),
-              const Text("Réalisé par Hamilton Darryl (Développeur fullstack)")
+                  const SizedBox(height: 10),
+               Align(
+                alignment: Alignment.bottomCenter,
+                child:TextButton(
+                  onPressed: (){
+                    Helpers.goTowebsite('https://github.com/hamiltondarryl');
+                },
+                 child:const Text("Réalisé par Hamilton Darryl (Développeur fullstack)", textAlign: TextAlign.center, style: TextStyle(color: Colors.black54),))
+                )
             ],
           ),
         ),

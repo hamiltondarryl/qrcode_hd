@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qrcode_hd/app/data/images.dart';
+import 'package:qrcode_hd/app/services/helpers.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/home_controller.dart';
 
@@ -66,9 +67,13 @@ class HomeView extends GetView<HomeController> {
                       ),
                  
               const SizedBox(height: 40),
-              const Align(
+               Align(
                 alignment: Alignment.bottomCenter,
-                child: Text("Réalisé par Hamilton Darryl (Développeur fullstack)")
+                child:TextButton(
+                  onPressed: (){
+                    Helpers.goTowebsite('https://github.com/hamiltondarryl');
+                },
+                 child:const Text("Réalisé par Hamilton Darryl (Développeur fullstack)", textAlign: TextAlign.center, style: TextStyle(color: Colors.black54),))
                 )
             ],
           ),
