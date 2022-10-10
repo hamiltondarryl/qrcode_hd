@@ -9,6 +9,6 @@ de scanner et d'exporter votre Qr code
 
 <dl>
   <dt>Les packages : </dt>
-  <dd> qr_flutter (https://pub.dev/packages/qr_flutter)</dd>
-  <dd> url_launcher (https://pub.dev/packages/url_launcher) </dd>
+  <dd>- qr_flutter (https://pub.dev/packages/qr_flutter)</dd>
+  <dd>- url_launcher (https://pub.dev/packages/url_launcher) </dd>
 </dl>
