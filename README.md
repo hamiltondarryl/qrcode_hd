@@ -7,6 +7,6 @@ de scanner et d'exporter votre Qr code
 
 - [Flutter](https://flutter.dev/)
 
-    ** Les packeges __ 
-           __ [qr_flutter](https://pub.dev/packages/qr_flutter) 
-           __ [url_launcher](https://pub.dev/packages/url_launcher) 
+    Les packeges
+           * [qr_flutter](https://pub.dev/packages/qr_flutter) 
+           * [url_launcher](https://pub.dev/packages/url_launcher) 
