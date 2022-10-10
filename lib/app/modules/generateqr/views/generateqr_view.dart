@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:qrcode_hd/app/routes/app_pages.dart';
 
 import '../../../services/helpers.dart';
 import '../controllers/generateqr_controller.dart';
@@ -13,6 +14,11 @@ class GenerateqrView extends GetView<GenerateqrController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        centerTitle: true,
+        title: const Text('Générer QR code'),
+      ),
       body: SingleChildScrollView(
         child: Container(
           height: Get.height,
@@ -25,7 +31,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                     padding: const EdgeInsets.all(15.0),
                     child: QrImage(
                       data: controller.qrText.value,
-                      size: 310.0,
+                      size: 250.0,
                     ),
                   )),
               Obx(() => Row(
@@ -36,7 +42,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                       ),
                 ],
               )),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Form(
                   key: controller.keyForm,
                   child: Column(
