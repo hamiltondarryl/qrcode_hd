@@ -1,0 +1,118 @@
+// ignore_for_file: sized_box_for_whitespace
+
+import 'package:flutter/material.dart';
+
+import 'package:get/get.dart';
+import 'package:qr_flutter/qr_flutter.dart';
+
+import '../controllers/generateqr_controller.dart';
+
+class GenerateqrView extends GetView<GenerateqrController> {
+  const GenerateqrView({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 50),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Obx(() => Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: QrImage(
+                      data: controller.qrText.value,
+                      size: 310.0,
+                    ),
+                  )),
+              Obx(() => Text(
+                    "le Qr code corespond à : ${controller.qrText}",
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  )),
+              const SizedBox(height: 20),
+              Form(
+                  key: controller.keyForm,
+                  child: Column(
+                    children: [
+                      Container(
+                        height: 50,
+                        child: TextFormField(
+                          controller: controller.inputQr,
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return "Vous n'avez rien enter";
+                            }
+                            return null;
+                          },
+                          decoration: InputDecoration(
+                            contentPadding: const EdgeInsets.all(10),
+                            hintText: "Veuillez entrer votre expression",
+                            hintStyle: TextStyle(color: Colors.grey.shade400),
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide:
+                                    BorderSide(color: Colors.grey.shade400)),
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide:
+                                    BorderSide(color: Colors.grey.shade400)),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      Container(
+                        width: double.infinity,
+                        height: 50,
+                        child: OutlinedButton(
+                          style: ButtonStyle(
+                              side: MaterialStateProperty.resolveWith<BorderSide>(
+                                  (states) => const BorderSide(color: Colors.green)),
+                              backgroundColor:
+                                  MaterialStateProperty.resolveWith<Color>(
+                                      (states) => Colors.green),
+                              shape: MaterialStateProperty.resolveWith<
+                                  OutlinedBorder>((_) {
+                                return RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20));
+                              })),
+                          onPressed: () {
+                            if (controller.keyForm.currentState!.validate()) {
+                              controller.changeValue();
+                            }
+                          },
+                          child: const Text('Générer', style: TextStyle(color: Colors.white, fontSize: 16),),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      Container(
+                        width: double.infinity,
+                        height: 50,
+                        child: OutlinedButton(
+                          style: ButtonStyle(
+                              side: MaterialStateProperty.resolveWith<BorderSide>(
+                                  (states) => const BorderSide(color: Colors.green)),
+                              backgroundColor:
+                                  MaterialStateProperty.resolveWith<Color>(
+                                      (states) => Colors.white),
+                              shape: MaterialStateProperty.resolveWith<
+                                  OutlinedBorder>((_) {
+                                return RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20));
+                              })),
+                            onPressed: () {
+                            
+                            },
+                          child: const Text('Scanner QR Code', style: TextStyle(color: Colors.green, fontSize: 16),),
+                        ),
+                      ),
+                    ],
+                  )),
+              const SizedBox(height: 30),
+              const Text("Réalisé par Hamilton Darryl (Développeur fullstack)")
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
