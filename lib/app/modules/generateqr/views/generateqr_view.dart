@@ -23,7 +23,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
         child: Container(
           height: Get.height,
           width: double.infinity,
-          padding: const EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 50),
+          padding: const EdgeInsets.only(left: 30, right: 30, bottom: 50),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -120,7 +120,6 @@ class GenerateqrView extends GetView<GenerateqrController> {
                       ),
                     ],
                   )),
-                  const SizedBox(height: 10),
                Align(
                 alignment: Alignment.bottomCenter,
                 child:TextButton(
@@ -128,7 +127,8 @@ class GenerateqrView extends GetView<GenerateqrController> {
                     Helpers.goTowebsite('https://github.com/hamiltondarryl');
                 },
                  child:const Text("Réalisé par Hamilton Darryl (Développeur fullstack)", textAlign: TextAlign.center, style: TextStyle(color: Colors.black54),))
-                )
+                ),
+                SizedBox(height: 10)
             ],
           ),
         ),
