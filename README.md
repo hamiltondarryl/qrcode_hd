@@ -15,10 +15,10 @@ de scanner et d'exporter votre Qr code
   <dd>- gallery_saver (https://pub.dev/packages/gallery_saver) </dd>
 </dl>
 
-Inline-style: 
-![alt text](https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png "Accueil")
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" width="350" title="hover text">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" width="350" alt="accessibility text">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" width="350" title="Accueil">
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur.png" width="350" title="generateur 1">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur2.png" width="350" alt="generateur 2">
 </p>
