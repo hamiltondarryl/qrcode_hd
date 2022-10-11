@@ -14,3 +14,5 @@ de scanner et d'exporter votre Qr code
   <dd>- path_provider (https://pub.dev/packages/path_provider) </dd>
   <dd>- gallery_saver (https://pub.dev/packages/gallery_saver) </dd>
 </dl>
+
+[logo]: https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png " Accueil"
