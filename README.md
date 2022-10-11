@@ -15,4 +15,5 @@ de scanner et d'exporter votre Qr code
   <dd>- gallery_saver (https://pub.dev/packages/gallery_saver) </dd>
 </dl>
 
-[logo]: https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png " Accueil"
+Inline-style: 
+![alt text](https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png "Accueil")
