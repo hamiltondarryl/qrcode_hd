@@ -15,7 +15,8 @@ de scanner et d'exporter votre Qr code
   <dd>- gallery_saver (https://pub.dev/packages/gallery_saver) </dd>
 </dl>
 
-<p align="center">
+<p>Les images de l'application</p>
+<p>
   <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" width="350" title="Accueil">
 </p>
 <p align="center">
