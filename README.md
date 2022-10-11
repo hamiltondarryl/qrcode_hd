@@ -11,4 +11,6 @@ de scanner et d'exporter votre Qr code
   <dt>Les packages : <br></dt>
   <dd>- qr_flutter (https://pub.dev/packages/qr_flutter)</dd>
   <dd>- url_launcher (https://pub.dev/packages/url_launcher) </dd>
+  <dd>- path_provider (https://pub.dev/packages/path_provider) </dd>
+  <dd>- gallery_saver (https://pub.dev/packages/gallery_saver) </dd>
 </dl>
