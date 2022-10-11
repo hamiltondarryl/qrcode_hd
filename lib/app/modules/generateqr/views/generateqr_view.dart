@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:qrcode_hd/app/routes/app_pages.dart';
 
 import '../../../services/helpers.dart';
 import '../controllers/generateqr_controller.dart';
 
 class GenerateqrView extends GetView<GenerateqrController> {
+
+
   const GenerateqrView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -42,7 +43,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                       ),
                 ],
               )),
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               Form(
                   key: controller.keyForm,
                   child: Column(
@@ -113,7 +114,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                                     borderRadius: BorderRadius.circular(20));
                               })),
                             onPressed: () {
-                            
+                              controller.generator();
                             },
                           child: const Text('Télécharger QR Code', style: TextStyle(color: Colors.green, fontSize: 16),),
                         ),
@@ -128,7 +129,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                 },
                  child:const Text("Réalisé par Hamilton Darryl (Développeur fullstack)", textAlign: TextAlign.center, style: TextStyle(color: Colors.black54),))
                 ),
-                SizedBox(height: 10)
+               const SizedBox(height: 10)
             ],
           ),
         ),

@@ -42,7 +42,7 @@ class HomeView extends GetView<HomeController> {
                                     borderRadius: BorderRadius.circular(20));
                               })),
                             onPressed: () => Get.toNamed(AppPages.GENERATEQR),
-                          child: const Text('Générer QR Code', style: TextStyle(color: Colors.white, fontSize: 16),),
+                          child: const Text('Générer et télécharger QR Code', style: TextStyle(color: Colors.white, fontSize: 16),),
                         ),
                       ),
                       const SizedBox(height: 15,),
