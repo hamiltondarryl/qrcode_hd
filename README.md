@@ -17,3 +17,8 @@ de scanner et d'exporter votre Qr code
 
 Inline-style: 
 ![alt text](https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png "Accueil")
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" width="350" title="hover text">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" width="350" alt="accessibility text">
+</p>
