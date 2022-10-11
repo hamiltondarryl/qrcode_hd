@@ -18,9 +18,9 @@ de scanner et d'exporter votre Qr code
 <p></p>
 <p>Les images de l'application</p>
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" width="350" title="Accueil">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" target="_blanck" width="350" title="Accueil">
 </p>
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur.png" width="350" title="generateur 1">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur2.png" width="350" alt="generateur 2">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur.png" target="_blanck" width="350" title="generateur 1">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur2.png" target="_blanck" width="350" alt="generateur 2">
 </p>
