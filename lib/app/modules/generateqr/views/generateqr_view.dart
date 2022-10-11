@@ -9,8 +9,6 @@ import '../../../services/helpers.dart';
 import '../controllers/generateqr_controller.dart';
 
 class GenerateqrView extends GetView<GenerateqrController> {
-
-
   const GenerateqrView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -35,15 +33,32 @@ class GenerateqrView extends GetView<GenerateqrController> {
                       size: 250.0,
                     ),
                   )),
-              Obx(() => Row(
-                children: [
-                  Text(
-                        "le Qr code corespond à : ${controller.qrText}",
+              Obx(
+                () => Text.rich(
+                  TextSpan(
+                    children: [
+                      const TextSpan(text: 'Le Qr code corespond à :', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.green)),
+                      TextSpan(
+                        text: ' ${controller.qrText}',
                         style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                       ),
-                ],
-              )),
-              const SizedBox(height: 5),
+                    ],
+                  ),
+                ),
+              ),
+              Obx(
+                () =>controller.nameFileDowload.value == 'Hamilton Darryl' ? const SizedBox.shrink() :  Text.rich(
+                  TextSpan(
+                    children: [
+                      const TextSpan(text: 'Nom du fichier en galerie:', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.green)),
+                      TextSpan(
+                        text: ' ${controller.nameFileDowload.value}',
+                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                      ),
+                    ],
+                  ),
+                ) ,
+              ),
               Form(
                   key: controller.keyForm,
                   child: Column(
@@ -79,8 +94,9 @@ class GenerateqrView extends GetView<GenerateqrController> {
                         height: 50,
                         child: OutlinedButton(
                           style: ButtonStyle(
-                              side: MaterialStateProperty.resolveWith<BorderSide>(
-                                  (states) => const BorderSide(color: Colors.green)),
+                              side: MaterialStateProperty
+                                  .resolveWith<BorderSide>((states) =>
+                                      const BorderSide(color: Colors.green)),
                               backgroundColor:
                                   MaterialStateProperty.resolveWith<Color>(
                                       (states) => Colors.green),
@@ -94,7 +110,10 @@ class GenerateqrView extends GetView<GenerateqrController> {
                               controller.changeValue();
                             }
                           },
-                          child: const Text('Générer', style: TextStyle(color: Colors.white, fontSize: 16),),
+                          child: const Text(
+                            'Générer',
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          ),
                         ),
                       ),
                       const SizedBox(height: 20),
@@ -103,8 +122,9 @@ class GenerateqrView extends GetView<GenerateqrController> {
                         height: 50,
                         child: OutlinedButton(
                           style: ButtonStyle(
-                              side: MaterialStateProperty.resolveWith<BorderSide>(
-                                  (states) => const BorderSide(color: Colors.green)),
+                              side: MaterialStateProperty
+                                  .resolveWith<BorderSide>((states) =>
+                                      const BorderSide(color: Colors.green)),
                               backgroundColor:
                                   MaterialStateProperty.resolveWith<Color>(
                                       (states) => Colors.white),
@@ -113,23 +133,30 @@ class GenerateqrView extends GetView<GenerateqrController> {
                                 return RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20));
                               })),
-                            onPressed: () {
-                              controller.generator();
-                            },
-                          child: const Text('Télécharger QR Code', style: TextStyle(color: Colors.green, fontSize: 16),),
+                          onPressed: () {
+                            controller.generator();
+                          },
+                          child: const Text(
+                            'Télécharger QR Code',
+                            style: TextStyle(color: Colors.green, fontSize: 16),
+                          ),
                         ),
                       ),
                     ],
                   )),
-               Align(
-                alignment: Alignment.bottomCenter,
-                child:TextButton(
-                  onPressed: (){
-                    Helpers.goTowebsite('https://github.com/hamiltondarryl');
-                },
-                 child:const Text("Réalisé par Hamilton Darryl (Développeur fullstack)", textAlign: TextAlign.center, style: TextStyle(color: Colors.black54),))
-                ),
-               const SizedBox(height: 10)
+              Align(
+                  alignment: Alignment.bottomCenter,
+                  child: TextButton(
+                      onPressed: () {
+                        Helpers.goTowebsite(
+                            'https://github.com/hamiltondarryl');
+                      },
+                      child: const Text(
+                        "Réalisé par Hamilton Darryl (Développeur fullstack)",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.black54),
+                      ))),
+              const SizedBox(height: 10)
             ],
           ),
         ),

@@ -4,24 +4,28 @@ import 'dart:io';
 import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:gallery_saver/gallery_saver.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-//import 'package:share_plus/share_plus.dart';
 
 class GenerateqrController extends GetxController {
-
-
-   var qrText = 'Hamilton Darryl'.obs;
+  var qrText = 'Hamilton Darryl'.obs;
+  var nameFileDowload = 'Hamilton Darryl'.obs;
   final keyForm = GlobalKey<FormState>();
   TextEditingController inputQr = TextEditingController();
 
-  void changeValue(){
+  // Changement de valeur au niveau du champs de saisi
+  void changeValue() {
     qrText.value = inputQr.text;
-     inputQr.clear();
+    inputQr.clear();
   }
 
-   void generator ()async {
+  // Generation du Qr code
+  void generator() async {
+    nameFileDowload.value == qrText.value
+        ? nameFileDowload.value = 'Hamilton Darryl'
+        : null;
 
     final qrValidationResult = QrValidator.validate(
       data: qrText.value,
@@ -29,8 +33,8 @@ class GenerateqrController extends GetxController {
       errorCorrectionLevel: QrErrorCorrectLevel.L,
     );
 
+    // Verification si le QR code a été bien généré
     if (qrValidationResult.status == QrValidationStatus.valid) {
-
       final qrCode = qrValidationResult.qrCode;
 
       final painter = QrPainter.withQr(
@@ -41,28 +45,27 @@ class GenerateqrController extends GetxController {
         embeddedImage: null,
       );
 
-      final tempDir = await getTemporaryDirectory();
+      final tempDir = await getApplicationDocumentsDirectory();
       String tempPath = tempDir.path;
       final ts = DateTime.now().millisecondsSinceEpoch.toString();
-      String path = '$tempPath/$ts.png';
+      String path = '$tempPath/${qrText.value}-$ts.png';
+      nameFileDowload.value = '${qrText.value}-$ts.png';
 
-      final picData = await painter.toImageData(2048, format: ui.ImageByteFormat.png);
+      final picData =
+          await painter.toImageData(2048, format: ui.ImageByteFormat.png);
       await writeToFile(picData!, path);
 
-      // ignore: unnecessary_string_interpolations
-      //Share.shareFiles(['$path']);
+      final success = await GallerySaver.saveImage(path);
 
-      Get.snackbar('Felicitation!!', 'Votre QR code a été générer avec code info : ${qrText.value}');
+      Get.snackbar('Votre QR code a été générer',
+          'Le nom du fichier : $nameFileDowload');
     }
-
   }
 
-
-      Future<void> writeToFile(ByteData data, String path) async {
-      final buffer = data.buffer;
-      await File(path).writeAsBytes(
-        buffer.asUint8List(data.offsetInBytes, data.lengthInBytes)
-      );
-    }
-
+  // Ecriture du fichier
+  Future<void> writeToFile(ByteData data, String path) async {
+    final buffer = data.buffer;
+    await File(path).writeAsBytes(
+        buffer.asUint8List(data.offsetInBytes, data.lengthInBytes));
+  }
 }
