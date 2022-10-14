@@ -80,7 +80,7 @@ class HomeView extends GetView<HomeController> {
                   child: TextButton(
                       onPressed: () {
                         Helpers.goTowebsite(
-                            'https://github.com/hamiltondarryl');
+                            'https://hamiltondarryl.github.io/me/');
                       },
                       child: const Text(
                         "Réalisé par Hamilton Darryl (Développeur fullstack)",

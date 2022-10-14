@@ -1,10 +1,11 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, unused_local_variable, avoid_print
 
+import 'package:string_validator/string_validator.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Helpers {
-  
-    // pour les sites
+
+  // pour les sites
   static Future<void> goTowebsite(String website) async {
     if (await canLaunch(website)) {
       await launch(website);
@@ -13,6 +14,41 @@ class Helpers {
     }
   }
 
+  // pour les mails
+  static Future<void> makeEmail(String email) async {
+    final Uri launchUri = Uri(
+      scheme: 'mailto',
+      path: email,
+    );
+    await launch(launchUri.toString());
+  }
 
- 
+    // Reducteeur de phrase
+  static String smallSentence(String bigSentence, int lenght, int limit) {
+    if (bigSentence.length > lenght) {
+      return bigSentence.substring(0, limit) + '...';
+    } else {
+      return bigSentence;
+    }
+  }
+
+  static List validator({String? data}) {
+    if (isJson(data!)) {
+      return ['json', 'Données en json', data];
+    }
+
+    if (isEmail(data)) {
+      return ['email', 'Une adresse email', data];
+    }
+
+    if (isURL(data)) {
+      return ['url', 'Une url', data];
+    }
+
+    if (isIP(data)) {
+      return ['ip', 'Une IP', data];
+    }
+
+    return ['string', 'Chaine de caratére', data];
+  }
 }

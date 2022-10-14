@@ -27,7 +27,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.SCANNER,
-      page: () => const ScannerView(),
+      page: () =>  ScannerView(),
       binding: ScannerBinding(),
     ),
     GetPage(

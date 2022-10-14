@@ -14,6 +14,9 @@ dependencies:
   url_launcher: ^6.1.6
   path_provider: ^2.0.11
   gallery_saver: ^2.3.2
+  string_validator: ^0.3.0
+  flutter_barcode_scanner: ^2.0.0
+  flutter_json_viewer: ^1.0.1
 
 dev_dependencies: 
   flutter_lints: 2.0.1
