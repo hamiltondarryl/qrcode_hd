@@ -1,7 +1,9 @@
-# qrcode_hd
+# QR Code HD
 
-Est une application qui permet de généner des Qr Code, 
-de scanner et d'exporter votre Qr code 
+QR Code HD est une application qui permet de générer des Qr Code, 
+de scanner et d'exporter votre QR Code.
+cette application évoluera dans le temps en fonction des besoins et je serai ravie 😊
+d'avoir vos avis et idées pour améliorer cette APP
 
 ## Comme technologie : 
 
