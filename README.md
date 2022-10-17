@@ -26,13 +26,19 @@ d'avoir vos avis et idées pour améliorer cette APP.
 <p></p>
 <p>Les images de l'application</p>
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.png" target="_blanck" width="350" title="Accueil">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.jpg" target="_blanck" width="350" title="Accueil">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur1.jpg" target="_blanck" width="350" title="generateur">
 </p>
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur.png" target="_blanck" width="350" title="generateur 1">=
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur2.png" target="_blanck" width="350" alt="generateur 2">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan1.jpg" target="_blanck" width="350" title="scan 1">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan2.jpg" target="_blanck" width="350" alt="scan 2">
 </p>
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan1.png" target="_blanck" width="350" title="scan 1">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan2.png" target="_blanck" width="350" alt="scan 2">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan3.png" target="_blanck" width="350" title="scan 3">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan4.png" target="_blanck" width="350" alt="scan 4">
+</p>
+
+<p>
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/presentations/Google Pixel 4 XL (1520x3040)/Google Pixel 4 XL Screenshot 0.png" target="_blanck" width="350" title="scan 3">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/presentations/Google Pixel 4 XL (1520x3040)/Google Pixel 4 XL Screenshot 1.png" target="_blanck" width="350" alt="scan 4">
 </p>
