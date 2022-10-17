@@ -26,14 +26,14 @@ d'avoir vos avis et idées pour améliorer cette APP.
 <p></p>
 <p>Les images de l'application</p>
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/accueil.jpg" target="_blanck" width="350" title="Accueil">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/generateur1.jpg" target="_blanck" width="350" title="generateur">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/v1.0.1/assets/img/screenshots/accueil.jpg" target="_blanck" width="350" title="Accueil">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/v1.0.1/assets/img/screenshots/generateur1.jpg" target="_blanck" width="350" title="generateur">
 </p>
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan1.jpg" target="_blanck" width="350" title="scan 1">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan2.jpg" target="_blanck" width="350" alt="scan 2">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/v1.0.1/assets/img/screenshots/scan1.jpg" target="_blanck" width="350" title="scan 1">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/v1.0.1/assets/img/screenshots/scan2.jpg" target="_blanck" width="350" alt="scan 2">
 </p>
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan3.png" target="_blanck" width="350" title="scan 3">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan4.png" target="_blanck" width="350" alt="scan 4">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/v1.0.1/assets/img/screenshots/scan3.png" target="_blanck" width="350" title="scan 3">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/v1.0.1/assets/img/screenshots/scan4.png" target="_blanck" width="350" alt="scan 4">
 </p>
