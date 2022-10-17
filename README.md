@@ -17,7 +17,8 @@ d'avoir vos avis et idées pour améliorer cette APP.
   <dd>- gallery_saver (https://pub.dev/packages/gallery_saver)</dd>
   <dd>- string_validator (https://pub.dev/packages/string_validator)</dd>
   <dd>- flutter_barcode_scanner (https://pub.dev/packages/flutter_barcode_scanner)</dd>
-  <dd>- flutter_json_viewer (https://pub.dev/packages/flutter_json_viewer)</dd>  
+  <dd>- flutter_json_viewer (https://pub.dev/packages/flutter_json_viewer)</dd> 
+  <dd>- fluttertoast (https://pub.dev/packages/fluttertoast)</dd>  
 </dl>
 
 <p></p>

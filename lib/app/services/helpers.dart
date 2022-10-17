@@ -1,5 +1,4 @@
-// ignore_for_file: deprecated_member_use, unused_local_variable, avoid_print
-
+// ignore_for_file: deprecated_member_use, unused_local_variable, avoid_print, unnecessary_null_comparison
 import 'package:string_validator/string_validator.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -8,7 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
  */
 class Helpers {
 
-  // Methode pour accéder à un site 
+  // Methode pour accéder à un site
   static Future<void> goTowebsite(String website) async {
     if (await canLaunch(website)) {
       await launch(website);
@@ -28,15 +27,14 @@ class Helpers {
 
   // Reducteeur de phrase
   static String smallSentence({required String bigSentence}) {
-       if (bigSentence.length > 200) {
-          return '${bigSentence.substring(0, 200)}...';
-       }
+    if (bigSentence.length > 200) {
+      return '${bigSentence.substring(0, 200)}...';
+    }
     return bigSentence;
   }
 
   // Methode pour valider la data provenant du Scanner de QR code
   static List validator({String? data}) {
-
     if (isJson(data!)) {
       return ['json', 'Données en json', data];
     }
