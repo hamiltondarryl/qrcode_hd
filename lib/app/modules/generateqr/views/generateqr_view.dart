@@ -62,7 +62,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                   child: Column(
                     children: [
                       Container(
-                        height: 50,
+                        height: 55,
                         child: TextFormField(
                           controller: controller.inputQr,
                           validator: (value) {
@@ -72,7 +72,8 @@ class GenerateqrView extends GetView<GenerateqrController> {
                             return null;
                           },
                           decoration: InputDecoration(
-                            contentPadding: const EdgeInsets.all(10),
+                            errorStyle: const TextStyle(fontSize: 13, height: 0.05),
+                            //contentPadding: const EdgeInsets.all(10),
                             hintText: "Veuillez entrer votre expression",
                             hintStyle: TextStyle(color: Colors.grey.shade400, fontSize: 15),
                             enabledBorder: OutlineInputBorder(
