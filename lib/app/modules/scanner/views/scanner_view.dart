@@ -20,7 +20,7 @@ class ScannerView extends GetView<ScannerController> {
         appBar: AppBar(
           backgroundColor: Colors.green,
           centerTitle: true,
-          title: const Text('Scanner QR code'),
+          title: const Text('Scanner QR Code'),
         ),
         body: Container(
           padding:
@@ -264,7 +264,7 @@ class ScannerView extends GetView<ScannerController> {
                         fontSize: 17,
                         color: Colors.green)),
                 TextSpan(
-                  text: " ${controller.dataResult.value.substring(0, 30)} ${  controller.dataResult.value.length > 30 ?'...' :'' }",
+                  text: " ${controller.dataResult.value.substring(0, 30)} ${controller.dataResult.value.length > 30 ?'...' :'' }",
                   style: const TextStyle(
                       fontWeight: FontWeight.bold, fontSize: 17),
                 ),
@@ -293,7 +293,7 @@ class ScannerView extends GetView<ScannerController> {
                           height: Get.height / 4,
                           child: Column(
                             children: [
-                              const Text('Vous pouvez cliquer sur le lien 😊 ', style:  TextStyle(fontSize: 18),),
+                              const Text('Vous pouvez cliquer sur l\'email 😊 ', style:  TextStyle(fontSize: 18),),
                               const SizedBox(height: 20),
                               TextButton(
                                 onPressed: (){

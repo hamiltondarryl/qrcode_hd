@@ -3,9 +3,12 @@
 import 'package:string_validator/string_validator.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+/* 
+    Classe pour la gestion des actions
+ */
 class Helpers {
 
-  // pour les sites
+  // Methode pour accéder à un site 
   static Future<void> goTowebsite(String website) async {
     if (await canLaunch(website)) {
       await launch(website);
@@ -14,7 +17,7 @@ class Helpers {
     }
   }
 
-  // pour les mails
+  // Methode pour envoyer un mail
   static Future<void> makeEmail(String email) async {
     final Uri launchUri = Uri(
       scheme: 'mailto',
@@ -23,16 +26,9 @@ class Helpers {
     await launch(launchUri.toString());
   }
 
-    // Reducteeur de phrase
-  static String smallSentence(String bigSentence, int lenght, int limit) {
-    if (bigSentence.length > lenght) {
-      return bigSentence.substring(0, limit) + '...';
-    } else {
-      return bigSentence;
-    }
-  }
-
+  // Methode pour valider la data provenant du Scanner de QR code
   static List validator({String? data}) {
+
     if (isJson(data!)) {
       return ['json', 'Données en json', data];
     }

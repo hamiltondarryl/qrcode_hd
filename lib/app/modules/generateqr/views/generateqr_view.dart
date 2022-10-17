@@ -1,10 +1,8 @@
 // ignore_for_file: sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-
 import '../../../services/helpers.dart';
 import '../controllers/generateqr_controller.dart';
 

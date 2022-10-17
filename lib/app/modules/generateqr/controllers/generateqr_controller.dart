@@ -57,7 +57,7 @@ class GenerateqrController extends GetxController {
 
       final success = await GallerySaver.saveImage(path);
 
-      Get.snackbar('Votre QR code a été générer',
+      Get.snackbar('Votre QR code a été généré',
           'Le nom du fichier : $nameFileDowload');
     }
   }

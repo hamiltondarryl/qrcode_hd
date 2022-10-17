@@ -7,9 +7,9 @@ class HomeController extends GetxController {
   final keyForm = GlobalKey<FormState>();
   TextEditingController inputQr = TextEditingController();
 
+  // Changement de valeur
   void changeValue(){
     qrText.value = inputQr.text;
      inputQr.clear();
   }
-
 }
