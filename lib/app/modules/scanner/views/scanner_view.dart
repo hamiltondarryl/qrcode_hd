@@ -68,7 +68,7 @@ class ScannerView extends GetView<ScannerController> {
                 () => Container(
                   child: controller.isLoading.value
                       ? retunedWiget()
-                      : const Center(child: Text('Pas de données')),
+                      : const Center(child: Text('Pas de données', style: TextStyle(fontSize: 17),)),
                 ),
               ))
             ],
