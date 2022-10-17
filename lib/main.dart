@@ -7,7 +7,7 @@ import 'app/routes/app_pages.dart';
 void main() {
   runApp(
     GetMaterialApp(
-      title: "QR code by Hamilton Darryl",
+      title: "QR Code HD",
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
