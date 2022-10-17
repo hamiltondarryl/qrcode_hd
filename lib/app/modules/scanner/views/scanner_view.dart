@@ -1,7 +1,6 @@
 // ignore_for_file: annotate_overrides, avoid_unnecessary_containers, sized_box_for_whitespace, avoid_print, unnecessary_string_interpolations
 
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_json_viewer/flutter_json_viewer.dart';
 import 'package:get/get.dart';
@@ -95,8 +94,7 @@ class ScannerView extends GetView<ScannerController> {
                         color: Colors.green)),
                 TextSpan(
                   text: ' ${controller.libelle.value}',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 17),
+                  style: const TextStyle(fontSize: 17),
                 ),
               ],
             ),
@@ -156,8 +154,7 @@ class ScannerView extends GetView<ScannerController> {
                         color: Colors.green)),
                 TextSpan(
                   text: ' ${controller.libelle.value}',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 17),
+                  style: const TextStyle(fontSize: 17),
                 ),
               ],
             ),
@@ -167,15 +164,14 @@ class ScannerView extends GetView<ScannerController> {
             TextSpan(
               children: [
                 const TextSpan(
-                    text: 'Données :',
+                    text: 'Données : ',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
                         color: Colors.green)),
                 TextSpan(
-                  text: " ${controller.dataResult.value.substring(0, 30)} ${  controller.dataResult.value.length > 30 ?'...' :'' }",
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 17),
+                  text: Helpers.smallSentence(bigSentence: controller.dataResult.value),
+                  style: const TextStyle(fontSize: 17),
                 ),
               ],
             ),
@@ -247,8 +243,7 @@ class ScannerView extends GetView<ScannerController> {
                         color: Colors.green)),
                 TextSpan(
                   text: ' ${controller.libelle.value}',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 17),
+                  style: const TextStyle(fontSize: 17),
                 ),
               ],
             ),
@@ -258,15 +253,14 @@ class ScannerView extends GetView<ScannerController> {
             TextSpan(
               children: [
                 const TextSpan(
-                    text: 'Données :',
+                    text: 'Données : ',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
                         color: Colors.green)),
                 TextSpan(
-                  text: " ${controller.dataResult.value.substring(0, 30)} ${controller.dataResult.value.length > 30 ?'...' :'' }",
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 17),
+                  text:  Helpers.smallSentence(bigSentence: controller.dataResult.value),
+                  style: const TextStyle(fontSize: 17),
                 ),
               ],
             ),
@@ -321,7 +315,7 @@ class ScannerView extends GetView<ScannerController> {
       ),
     );
     }
-    
+
     // Affichage par defaut 
     return Container(
       child: ListView(
@@ -337,8 +331,7 @@ class ScannerView extends GetView<ScannerController> {
                         color: Colors.green)),
                 TextSpan(
                   text: ' ${controller.libelle.value}',
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 17),
+                  style: const TextStyle(fontSize: 17),
                 ),
               ],
             ),
@@ -347,16 +340,16 @@ class ScannerView extends GetView<ScannerController> {
           Text.rich(
             TextSpan(
               children: [
-                const TextSpan(
-                    text: 'Données :',
+                 const TextSpan(
+                    text: 'Données : ',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
-                        color: Colors.green)),
+                        color: Colors.green)
+                  ),
                 TextSpan(
-                  text: " ${controller.dataResult.value.substring(0, 30)} ${  controller.dataResult.value.length > 30 ?'...' :'' }",
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 17),
+                  text: Helpers.smallSentence(bigSentence: controller.dataResult.value),
+                  style: const TextStyle(fontSize: 17),
                 ),
               ],
             ),

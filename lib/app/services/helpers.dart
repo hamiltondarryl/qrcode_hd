@@ -26,6 +26,14 @@ class Helpers {
     await launch(launchUri.toString());
   }
 
+  // Reducteeur de phrase
+  static String smallSentence({required String bigSentence}) {
+       if (bigSentence.length > 200) {
+          return '${bigSentence.substring(0, 200)}...';
+       }
+    return bigSentence;
+  }
+
   // Methode pour valider la data provenant du Scanner de QR code
   static List validator({String? data}) {
 
@@ -45,6 +53,6 @@ class Helpers {
       return ['ip', 'Une IP', data];
     }
 
-    return ['string', 'Chaine de caratére', data];
+    return ['La Chaine de caractère', 'Chaine de caractère', data];
   }
 }

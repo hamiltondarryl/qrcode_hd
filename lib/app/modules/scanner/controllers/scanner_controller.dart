@@ -17,7 +17,7 @@ class ScannerController extends GetxController {
       final qrCode = await FlutterBarcodeScanner.scanBarcode(
           '#ff6666', 'Annuler', true, ScanMode.BARCODE);
       var resultat = Helpers.validator(data: qrCode);
-      if (int.parse(resultat[2]) != -1) {
+      if (resultat[2] != '-1') {
         type.value = resultat[0];
         libelle.value = resultat[1];
         dataResult.value = resultat[2];
