@@ -39,6 +39,6 @@ d'avoir vos avis et idées pour améliorer cette APP.
 </p>
 
 <p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/presentations/Google Pixel 4 XL (1520x3040)/Google Pixel 4 XL Screenshot 0.png" target="_blanck" width="350" title="scan 3">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/presentations/Google Pixel 4 XL (1520x3040)/Google Pixel 4 XL Screenshot 1.png" target="_blanck" width="350" alt="scan 4">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/presentations/android/Screenshot0.png" target="_blanck" width="350" title="scan 3">
+  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/presentations/android/Screenshot1.png" target="_blanck" width="350" alt="scan 4">
 </p>
