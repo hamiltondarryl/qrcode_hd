@@ -1,4 +1,4 @@
-// ignore_for_file: unused_local_variable, deprecated_member_use
+// ignore_for_file: unused_local_variable, deprecated_member_use, import_of_legacy_library_into_null_safe
 
 import 'dart:io';
 import 'dart:ui' as ui;
@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gallery_saver/gallery_saver.dart';
 import 'package:get/get.dart';
+import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
@@ -54,7 +55,7 @@ class GenerateqrController extends GetxController {
       final picData =
           await painter.toImageData(2048, format: ui.ImageByteFormat.png);
       await writeToFile(picData!, path);
-
+      OpenFile.open(path);
       final success = await GallerySaver.saveImage(path);
 
       Get.snackbar('Votre QR code a été généré',

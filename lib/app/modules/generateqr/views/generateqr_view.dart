@@ -44,19 +44,6 @@ class GenerateqrView extends GetView<GenerateqrController> {
                   ),
                 ),
               ),
-              Obx(
-                () =>controller.nameFileDowload.value == 'Hamilton Darryl' ? const SizedBox.shrink() :  Text.rich(
-                  TextSpan(
-                    children: [
-                      const TextSpan(text: 'Nom du fichier en galerie:', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.green)),
-                      TextSpan(
-                        text: ' ${controller.nameFileDowload.value}',
-                        style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                      ),
-                    ],
-                  ),
-                ) ,
-              ),
               Form(
                   key: controller.keyForm,
                   child: Column(
