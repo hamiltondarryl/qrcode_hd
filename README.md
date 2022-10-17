@@ -37,8 +37,3 @@ d'avoir vos avis et idées pour améliorer cette APP.
   <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan3.png" target="_blanck" width="350" title="scan 3">
   <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/screenshots/scan4.png" target="_blanck" width="350" alt="scan 4">
 </p>
-
-<p>
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/presentations/android/Screenshot0.png" target="_blanck" width="350" title="scan 3">
-  <img src="https://raw.githubusercontent.com/hamiltondarryl/qrcode_hd/main/assets/img/presentations/android/Screenshot1.png" target="_blanck" width="350" alt="scan 4">
-</p>
