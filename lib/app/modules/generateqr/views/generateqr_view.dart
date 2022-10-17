@@ -14,7 +14,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
       appBar: AppBar(
         backgroundColor: Colors.green,
         centerTitle: true,
-        title: const Text('Générer QR code'),
+        title: const Text('Générer QR Code'),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -35,7 +35,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                 () => Text.rich(
                   TextSpan(
                     children: [
-                      const TextSpan(text: 'Le Qr code corespond à :', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.green)),
+                      const TextSpan(text: 'Le Qr Code correspond à :', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.green)),
                       TextSpan(
                         text: ' ${controller.qrText}',
                         style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
@@ -74,7 +74,7 @@ class GenerateqrView extends GetView<GenerateqrController> {
                           decoration: InputDecoration(
                             contentPadding: const EdgeInsets.all(10),
                             hintText: "Veuillez entrer votre expression",
-                            hintStyle: TextStyle(color: Colors.grey.shade400),
+                            hintStyle: TextStyle(color: Colors.grey.shade400, fontSize: 15),
                             enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10),
                                 borderSide:
