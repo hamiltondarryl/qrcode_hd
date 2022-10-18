@@ -4,7 +4,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 /* 
     Classe pour la gestion des actions
- */
+*/
+
 class Helpers {
 
   // Methode pour accéder à un site

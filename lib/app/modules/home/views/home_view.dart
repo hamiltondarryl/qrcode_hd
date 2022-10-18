@@ -15,7 +15,7 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-      onWillPop: ()=> controller.onWillPop(),
+      onWillPop: () => controller.onWillPop(),
       child: Scaffold(
         body: SingleChildScrollView(
           child: Container(
@@ -38,10 +38,12 @@ class HomeView extends GetView<HomeController> {
                     style: ButtonStyle(
                         side: MaterialStateProperty.resolveWith<BorderSide>(
                             (states) => const BorderSide(color: Colors.green)),
-                        backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                            (states) => Colors.green),
-                        shape: MaterialStateProperty.resolveWith<OutlinedBorder>(
-                            (_) {
+                        backgroundColor:
+                            MaterialStateProperty.resolveWith<Color>(
+                                (states) => Colors.green),
+                        shape:
+                            MaterialStateProperty.resolveWith<OutlinedBorder>(
+                                (_) {
                           return RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20));
                         })),
@@ -62,10 +64,12 @@ class HomeView extends GetView<HomeController> {
                     style: ButtonStyle(
                         side: MaterialStateProperty.resolveWith<BorderSide>(
                             (states) => const BorderSide(color: Colors.green)),
-                        backgroundColor: MaterialStateProperty.resolveWith<Color>(
-                            (states) => Colors.white),
-                        shape: MaterialStateProperty.resolveWith<OutlinedBorder>(
-                            (_) {
+                        backgroundColor:
+                            MaterialStateProperty.resolveWith<Color>(
+                                (states) => Colors.white),
+                        shape:
+                            MaterialStateProperty.resolveWith<OutlinedBorder>(
+                                (_) {
                           return RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20));
                         })),

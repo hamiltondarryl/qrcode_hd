@@ -1,5 +1,7 @@
-import 'package:get/get.dart';
+// ignore_for_file: prefer_const_constructors
+// ignore_for_file: constant_identifier_names
 
+import 'package:get/get.dart';
 import '../modules/generateqr/bindings/generateqr_binding.dart';
 import '../modules/generateqr/views/generateqr_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -7,7 +9,6 @@ import '../modules/home/views/home_view.dart';
 import '../modules/scanner/bindings/scanner_binding.dart';
 import '../modules/scanner/views/scanner_view.dart';
 
-// ignore_for_file: constant_identifier_names
 
 part 'app_routes.dart';
 
@@ -27,12 +28,12 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.SCANNER,
-      page: () =>  ScannerView(),
+      page: () => ScannerView(),
       binding: ScannerBinding(),
     ),
     GetPage(
       name: _Paths.GENERATEQR,
-      page: () => const GenerateqrView(),
+      page: () => GenerateqrView(),
       binding: GenerateqrBinding(),
     ),
   ];

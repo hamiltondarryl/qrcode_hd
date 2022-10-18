@@ -6,12 +6,13 @@ import 'package:get/get.dart';
 import 'package:qrcode_hd/app/services/helpers.dart';
 
 class ScannerController extends GetxController {
+  
   var isLoading = false.obs;
   var type = ''.obs;
   var libelle = ''.obs;
   var dataResult = ''.obs;
-  //var json = <String, dynamic>.obs;
 
+  // Scanner le QR Code
   void scanQrCode() async {
     try {
       final qrCode = await FlutterBarcodeScanner.scanBarcode(
