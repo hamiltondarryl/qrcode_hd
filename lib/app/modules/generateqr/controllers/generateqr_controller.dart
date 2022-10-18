@@ -55,8 +55,8 @@ class GenerateqrController extends GetxController {
       final picData =
           await painter.toImageData(2048, format: ui.ImageByteFormat.png);
       await writeToFile(picData!, path);
-      OpenFile.open(path);
       final success = await GallerySaver.saveImage(path);
+      OpenFile.open(path);
 
       Get.snackbar('Votre QR code a été généré',
           'Le nom du fichier : $nameFileDowload');
