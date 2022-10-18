@@ -1,7 +1,7 @@
 name: qrcode_hd
 version: 1.0.0+1
 publish_to: none
-description: A new Flutter project.
+description: QR Code HD est une application qui permet de générer des Qr Code, de scanner et d'exporter votre QR Code.
 environment: 
   sdk: '>=2.18.0 <3.0.0'
 

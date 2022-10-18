@@ -5,12 +5,10 @@ de scanner et d'exporter votre QR Code.
 cette application évoluera dans le temps en fonction des besoins et je serai ravie 😊
 d'avoir vos avis et idées pour améliorer cette APP.
 
-## Comme technologie : 
-
-- [Flutter](https://flutter.dev/)
+## Comme technologie : [Flutter](https://flutter.dev/)
 
 <dl>
-  <dt>Les packages : <br></dt>
+  <dt>Les packages utilisés : <br></dt>
   <dd>- qr_flutter (https://pub.dev/packages/qr_flutter)</dd>
   <dd>- url_launcher (https://pub.dev/packages/url_launcher)</dd>
   <dd>- path_provider (https://pub.dev/packages/path_provider)</dd>
