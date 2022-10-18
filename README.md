@@ -20,6 +20,8 @@ d'avoir vos avis et idées pour améliorer cette APP.
   <dd>- flutter_json_viewer (https://pub.dev/packages/flutter_json_viewer)</dd> 
   <dd>- fluttertoast (https://pub.dev/packages/fluttertoast)</dd>
   <dd>- flutter_app_version_checker (https://pub.dev/packages/flutter_app_version_checker)</dd>
+  <dd>- open_file (https://pub.dev/packages/open_file)</dd>
+
 
 </dl>
 
