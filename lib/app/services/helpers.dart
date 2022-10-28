@@ -10,10 +10,10 @@ class Helpers {
 
   // Methode pour accéder à un site
   static Future<void> goTowebsite(String website) async {
-    if (await canLaunch(website)) {
-      await launch(website);
-    } else {
-      throw "Could not launch $website";
+    try {
+       await launch(website);
+    } catch (e) {
+      throw "Could not launch $website: => $e";
     }
   }
 

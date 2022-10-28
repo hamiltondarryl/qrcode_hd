@@ -52,8 +52,11 @@
 	<string>PhotoLibrary permission is required.</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>sms</string>
+		<string>https</string>
+		<string>http</string>
 		<string>tel</string>
+		<string>mailto</string>
+		<string>sms</string>
 	</array>
 	<true/>
 </dict>
